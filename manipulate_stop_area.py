@@ -4,7 +4,7 @@ import requests
 import csv
 
 url = "https://api.sncf.com/v1/coverage/sncf/stop_areas"
-headers = {"Authorization": "e3f2b3a6-caa9-47d7-98ee-1f67379e654b"}
+headers = {"Authorization": "6df7dc97-1bdc-4539-af03-9d854dd236fe"}
 response = requests.get(url, headers=headers) #pop up for password
 raw_data = json.loads(response.text)
 
@@ -18,23 +18,26 @@ print(type(areas))
 area = areas[2] #dict
 
 list_ids = []
+list_name = []
 
-for loop_area in areas:
-    if type(loop_area) == dict:
-        if "id" in loop_area.keys(): #!!!!!!
+for loop_area, loop_name in zip(areas, areas):
+    if type(loop_area) == dict and type(loop_name) ==  dict:
+        if "id" in loop_area.keys() and "name" in loop_name.keys(): #!!!!!!
             local_id = loop_area["id"]
+            local_name = loop_name["name"]
             list_ids.append(local_id)
+            list_name.append(local_name)
         else:
             print("Missing key id")
     else:
         print(f"Unexpected format {type(loop_area)}")
 
-print(len(list_ids))
+print(list_ids, list_name)
 
 
 # print(type(area), area)
 
-# print(area.keys())
+#print(area.keys())
 
 # print(area["id"])
 
@@ -55,4 +58,22 @@ for loop_link in areas:
     else:
         print(f"Unexpected format {type(loop_link)}")
     
-print(len(list_link))
+#print(list_link)
+
+#print(area)
+
+'''
+how to find name
+'''
+list_name = []
+
+for loop_name in areas:
+    if type(loop_name) == dict:
+        if "name" in loop_name.keys():
+            local_name = loop_name["name"]
+            list_name.append(local_name)
+        else:
+            print("missing key name")
+    else:
+        print(f"Unexpected format {type(loop_name)}")
+#print(list_name)
