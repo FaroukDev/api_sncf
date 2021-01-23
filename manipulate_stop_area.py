@@ -80,11 +80,6 @@ with open(fname, 'w') as csv_file:
     for item in areas:
         csv_file.writerow([item['id'], item['name']])
         
-        
-
-
-
-
 
 '''
 how to find name
@@ -101,5 +96,34 @@ for loop_name in areas:
     else:
         print(f"Unexpected format {type(loop_name)}")
 #print(list_name)
+
+
+logging.info("fetch data info between paris and lyon")
+'''
+fetch journey between paris and lyon
+'''
+
+paris = "stop_area:OCE:SA:87686006"
+
+lyon = "stop_area:OCE:SA:87722025"
+
+URL = f"https://api.sncf.com/v1/journeys?from={paris}&to={lyon}"
+
+headers = {"Authorization": "6df7dc97-1bdc-4539-af03-9d854dd236fe"}
+req = requests.get(URL, headers=headers)
+
+raw_data = req.json()
+
+
+for data in raw_data["journeys"]:
+    print(data)
+
+'''
+number of stop areas between paris and lyon
+'''
+
+logging.info("fetch number of stop areas between paris and lyon")
+for data in raw_data["journeys"]:
+    print(len(data))
 
 logging.info("script_ended")
