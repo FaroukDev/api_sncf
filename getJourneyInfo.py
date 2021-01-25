@@ -25,12 +25,22 @@ logging.basicConfig(filename=LOGFILE,
                         level=logging.DEBUG,
                         datefmt='[%Y-%m-%d %H:%M:%S]')
 
+def logger(func):
+    def wrapper(*args, **kwargs):
+        logging.info(f"Entering function {func.__name__}")
+        res = func(*args)
+        logging.info(f"Leaving function {func.__name__}")
+        return res
+    return wrapper
 
+
+@logger
 def getAPIKey(keyFile: pathlib.Path) -> str:
     with open(keyFile, 'r') as f:
         content = f.read()
     return content
 
+@logger
 def handleSigInt(sigNum, stackFrame=None):
     logging.info("Ctrl-C pressed. Exiting script")
     sys.exit(130)
@@ -45,12 +55,14 @@ class JourneyInfo:
         self._arrival = None
         self._journeyInfo = {} # List of possible journeys
 
+    @logger
     def _initCompletion(self):
         readline.parse_and_bind("tab: complete")
         completer = Completer(list(self._stationsCodes.keys()))
         readline.set_completer_delims('')
         readline.set_completer(completer.complete)
 
+    @logger
     def _getURLData(self, url: str) -> dict:
         res = requests.get(url, auth=(self._apiAuthKey, ''))
         logging.info(f"Request send to url {url}")
@@ -62,6 +74,7 @@ class JourneyInfo:
             sys.exit(1)
         return data
 
+    @logger
     def _getStationsCodes(self, url: str) -> tuple:
         """Two scenarios: If script is run for the first time then it send requests API to get stations UIC Codes
             Then those codes are saved as a json in data/ directory: ./data/stations_code.json
@@ -82,6 +95,7 @@ class JourneyInfo:
                 start_page += 1
             self._saveStationsCodes()
 
+    @logger
     def _saveStationsCodes(self):
         try:
             os.mkdir("data", 0o744)
@@ -91,6 +105,7 @@ class JourneyInfo:
             with open("data/stations_codes.json", "w") as codes:
                 json.dump(self._stationsCodes, codes, indent=4)
 
+    @logger
     def _updateStationsCodes(self, data: dict, regex):
         try:
             areas = data['stop_areas']
@@ -101,26 +116,27 @@ class JourneyInfo:
         except KeyError as err:
             logging.error(f'Missing key {err}')
 
+    @logger
     def _getDepartureArrival(self):
-        # timeRegex = re.compile(r'^((2[0-3]|[0-1][0-9]):[0-5][0-9])|$')
         try:
             departure = input("Please select departure station: ").strip()
             arrival = input("Please select arrival station: ").strip()
-            # self._datetime = input("Please enter time (HH:MM:SS): ")
             self._departure = (departure, self._stationsCodes[departure])
             self._arrival = (arrival, self._stationsCodes[arrival])
         except KeyError as err:
             logging.error(f'Missing key {err}')
             sys.exit(1)
-        except (EOFError, KeyboardInterrupt):
-            pass
+        except EOFError:
+            sys.exit(2)
 
+    @logger
     def _parseJourneys(self, journeys: list):
         for n, journey in enumerate(journeys, 1):
             if isinstance(journey, dict) and 'sections' in journey:
                 sections = journey['sections']
                 self._journeyInfo['journey' + str(n)] = self._parseSections(sections)
 
+    @logger
     def _parseSections(self, sections: dict) -> list:
         newJourney = []
         for section in sections:
@@ -130,6 +146,7 @@ class JourneyInfo:
                 newJourney.append(newSection)
         return newJourney
 
+    @logger
     def _parseStops(self, stops: list) -> dict:
         newSection = {'section': []}
         for stop in stops:
@@ -140,6 +157,7 @@ class JourneyInfo:
             newSection['section'].append(newStop)
         return newSection
 
+    @logger
     def _getJourneyInfo(self):
         ''' Functions fill dict with main informations concerning selected journey, formatted as:
             Departure time
@@ -157,25 +175,21 @@ class JourneyInfo:
             self._parseJourneys(journeys)
             with open("data/journey.json", "w", encoding='utf8') as f:
                 json.dump(self._journeyInfo, f, indent=4)
+            logging.info("Journey info stored in data/journeys.json")
         except KeyError as err:
             logging.error(f'Missing key {err}')
         except TypeError:
             logging.error("Unexpected format")
             sys.exit(1)
 
-    def _displayJourneys(self):
-        print("-"*27)
-        print(f"|{self._departure[NAME]:25}|")
-        print("-"*27)
-
+    @logger
     def run(self):
         self._getStationsCodes(AREAS_URL)
         self._initCompletion()
         self._getDepartureArrival()
         self._getJourneyInfo()
-        self._displayJourneys()
 
-
+@logger
 def parseArgs():
     parser = argparse.ArgumentParser('getJourneyInfo')
     parser.add_argument('-k', '--key-file',
@@ -197,7 +211,6 @@ def main():
     journey = JourneyInfo(apiAuthKey)
     journey.run()
     logging.info(f"Script ended")
-
 
 if __name__ == '__main__':
     main()
