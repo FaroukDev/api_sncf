@@ -425,3 +425,818 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
 DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2019
 INFO:root:fetch number of stop areas between paris and lyon
 INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2018
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2411
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2017
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2015
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2019
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2412
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1972
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1972
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1977
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1972
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1972
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1972
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1973
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1974
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1971
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 None
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2412
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1970
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1972
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1971
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1971
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1974
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1968
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1975
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1970
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1970
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1972
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1969
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1978
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1976
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2412
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1973
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1972
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2017
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2019
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2012
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2411
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2013
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2016
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2018
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 None
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1917
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1910
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 1910
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2042
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2046
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2041
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2037
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2412
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2047
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2039
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2411
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2043
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2045
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2042
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2044
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2042
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2410
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2041
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2040
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2040
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2411
+INFO:root:find name and id in areas
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2044
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2041
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2040
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2411
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2041
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2087
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas/stop_area:OCE:SA:87686006/stop_schedules HTTP/1.1" 200 None
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2089
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/journeys?from=stop_area:OCE:SA:87686006 HTTP/1.1" 200 2153
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2087
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/journeys?from=stop_area:OCE:SA:87686006 HTTP/1.1" 200 2154
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2087
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/journeys?from=stop_area:OCE:SA:87686006 HTTP/1.1" 200 2150
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2413
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2086
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/journeys?from=stop_area:OCE:SA:87686006 HTTP/1.1" 200 2155
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 None
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 None
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/journeys?from=stop_area:OCE:SA:87686006 HTTP/1.1" 200 2213
+INFO:root:script_ended
+INFO:root:Script started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/stop_areas HTTP/1.1" 200 2414
+INFO:root:find name and id in areas
+INFO:root:find url in areas json file
+INFO:root:transform file in csv
+INFO:root:fetch data info between paris and lyon
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/journeys?from=stop_area:OCE:SA:87686006&to=stop_area:OCE:SA:87722025 HTTP/1.1" 200 2083
+INFO:root:fetch number of stop areas between paris and lyon
+INFO:root:how long does each stop have
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.sncf.com:443
+DEBUG:urllib3.connectionpool:https://api.sncf.com:443 "GET /v1/coverage/sncf/journeys?from=stop_area:OCE:SA:87686006 HTTP/1.1" 200 None
+INFO:root:script_ended
