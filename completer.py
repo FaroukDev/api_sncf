@@ -1,4 +1,3 @@
-#!/usr/local/bin/python3
 
 class Completer:
     def __init__(self, words):
