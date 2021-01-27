@@ -20,12 +20,12 @@ CODE = 1
 class JourneyInfo:
     """Class used for getting info about a journey between 2 SNCF stations"""
 
-    def __init__(self, apiAuthKey: str, storage: pathlib.Path):
+    def __init__(self, apiAuthKey: str = '', storage: pathlib.Path = ''):
         self._apiAuthKey = apiAuthKey
         self._stationsCodes = {} # Dict storing stations - UIC code mapping
         self._departure = None
         self._arrival = None
-        self._departureTime = ""
+        self._departureTime = None
         self._journeyInfo = {} # List of possible journeys
         self._storage = storage
 
@@ -49,7 +49,7 @@ class JourneyInfo:
         return data
 
     @logger
-    def _getStationsCodes(self, url: str) -> tuple:
+    def _getStationsCodes(self, url: str = ""):
         """Two scenarios: If script is run for the first time then it send requests API to get stations UIC Codes
             Then those codes are saved as a json in data/ directory: ./data/stations_code.json
             So, if data/stations_code.json exists, then no need to requests API but just load the json instead in stationsCodes attribute
@@ -82,26 +82,34 @@ class JourneyInfo:
     @logger
     def _updateStationsCodes(self, data: dict, regex):
         try:
-            areas = data['stop_areas']
-            for area in areas:
-                name = area['name']
-                if re.match(regex, name) and 'id' in area:
-                    self._stationsCodes[name] = area['id']
-        except KeyError as err:
-            logging.error(f'Missing key {err}')
+            if 'stop_areas' in data:
+                areas = data['stop_areas']
+                for area in areas:
+                    if 'name' in area:
+                        name = area['name']
+                        if re.match(regex, name) and 'id' in area:
+                            self._stationsCodes[name] = area['id']
+        except TypeError as err:
+            logging.info(f"Unable to retrieve station/code mapping. Unexpected format {err}")
+
+    def _getStationByInput(self, doa=''):
+        station = input(f"Please type {doa} station: ").strip()
+        return (station, self._stationsCodes[station])
+
+    def _getDepartureTime(self):
+        timeRegex = re.compile(r'^((2[0-3]|[0-1][0-9]):[0-5][0-9])|$')
+        departureTime = input("Please type time of departure (hh:mm):").strip()
+        if not re.match(timeRegex, departureTime):
+            logging.error("Incorrect date format")
+            sys.exit(1)
+        return departureTime
 
     @logger
     def _getDepartureArrival(self):
-        timeRegex = re.compile(r'^((2[0-3]|[0-1][0-9]):[0-5][0-9])|$')
         try:
-            departure = input("Please select departure station: ").strip()
-            arrival = input("Please select arrival station: ").strip()
-            departureTime = input("Please type time of departure (hh:mm):").strip()
-            self._departure = (departure, self._stationsCodes[departure])
-            self._arrival = (arrival, self._stationsCodes[arrival])
-            if not re.match(timeRegex, departureTime):
-                logging.error("Incorrect date format")
-                sys.exit(1)
+            self._departure = self._getStationByInput("departure")
+            self._arrival = self._getStationByInput("arrival")
+            self._departureTime = self._getDepartureTime()
         except KeyError as err:
             logging.error(f'Missing key {err}')
             sys.exit(1)
@@ -116,13 +124,14 @@ class JourneyInfo:
                 sections = journey['sections']
                 self._journeyInfo['journey' + str(n)] = self._parseSections(sections)
 
-    def _parseSections(self, sections: dict) -> list:
+    def _parseSections(self, sections: list) -> list:
         newJourney = []
         for section in sections:
             if 'stop_date_times' in section:
                 stops = section['stop_date_times']
                 newSection = self._parseStops(stops)
-                newJourney.append(newSection)
+                if newSection['section']:
+                    newJourney.append(newSection)
         return newJourney
 
     def _parseStops(self, stops: list) -> dict:
