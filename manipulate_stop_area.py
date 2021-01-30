@@ -3,6 +3,7 @@ import json
 import requests
 import csv
 import logging
+import datetime
 
 
 logging.basicConfig(filename='data.log', level=logging.DEBUG)
@@ -148,4 +149,7 @@ my_tgv1 = raw_data["journeys"][0]["sections"][1]["stop_date_times"][3]["base_dep
 my_tgv2 = raw_data["journeys"][0]["sections"][1]["stop_date_times"][2]["base_departure_date_time"]
 print(my_tgv1, my_tgv2)
 
+date1 = datetime.datetime.strptime('30-01-2021T18:09:03.283Z', '%d-%m-%YT%H:%M:%S.%fZ')
+date2 = datetime.datetime.strptime('30-01-2021T18:10:00.283Z', '%d-%m-%YT%H:%M:%S.%fZ')
+print(date1, date2)
 logging.info("script_ended")
