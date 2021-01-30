@@ -13,7 +13,7 @@ class TestJsonInPath(unittest.TestCase):
     def test_find_id_and_name(self):
         self.assertTrue(fetchnameandid())
 
-    def findlinks(self):
+    def test_findlinks(self):
         self.assertTrue(findurl())
 
     def test_find_name(self):
@@ -22,6 +22,7 @@ class TestJsonInPath(unittest.TestCase):
     def test_transform_in_csv(self):
         directory_path = './data.csv'
         self.assertTrue(os.path.exists(directory_path))
+        self.assertTrue(transform_in_csv())
 
 if __name__ == '__main__':
     unittest.main()

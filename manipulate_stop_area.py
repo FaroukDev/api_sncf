@@ -5,15 +5,14 @@ import csv
 import logging
 
 
-
 logging.basicConfig(filename='data.log', level=logging.DEBUG)
 logging.info("Script started")
 
 url = "https://api.sncf.com/v1/coverage/sncf/stop_areas"
 headers = {"Authorization": "6df7dc97-1bdc-4539-af03-9d854dd236fe"}
 
-def read_json():  # read and saves json
-    response = requests.get(url, headers=headers)  # pop up for password
+def read_json(self):  # read and saves json
+    response = requests.get(self.url, headers=self.headers)  # pop up for password
     # raw_data = json.loads(response.text) #dict
     with open('stop_areas.json', mode="w") as file:
         json.dump(response.text, file)
@@ -22,16 +21,9 @@ def read_json():  # read and saves json
 response = requests.get(url, headers=headers)  # pop up for password
 raw_data = json.loads(response.text)
 
-print(response)
-print(type(raw_data))
 
 areas = raw_data["stop_areas"]  # list
 
-pprint(areas)
-
-print(type(areas))
-
-# area = areas[2]  # dict
 
 logging.info("find name and id in areas")
 
@@ -52,14 +44,7 @@ def fetchnameandid():
         else:
             print(f"Unexpected format {type(loop_area)}")
     return list_ids, list_name
-#print(list_ids, list_name)
-
-# print(len(list_ids))
-# print(type(area), area)
-
-# print(area.keys())
-
-# print(area["id"])
+fetchnameandid()
 
 '''
 how to find url 
@@ -79,9 +64,8 @@ def findurl():
         else:
             print(f"Unexpected format {type(loop_link)}")
     return list_link
-# findurl()
-#print("hello")
-#print(list_link)
+findurl()
+
 
 '''
 transform in csv file
@@ -97,7 +81,7 @@ def transform_in_csv():
         for item in areas:
             return  csv_file.writerow([item['id'], item['name']])
 
-# transform_in_csv()
+transform_in_csv()
 '''
 how to find name
 '''
@@ -115,8 +99,8 @@ def findname():
         else:
             print(f"Unexpected format {type(loop_name)}")
     return list_name
-# findname()
-#print(list_name)
+findname()
+
 
 logging.info("fetch data info between paris and lyon")
 '''
@@ -139,7 +123,7 @@ for data in raw_data["journeys"]:
 '''
 number of stop areas between paris and lyon
 '''
-print(len(raw_data['journeys'][0]['sections'][1]['stop_date_times']))
+#print(len(raw_data['journeys'][0]['sections'][1]['stop_date_times']))
 
 logging.info("fetch number of stop areas between paris and lyon")
 # for data in raw_data["journeys"]:
@@ -153,5 +137,15 @@ logging.info("how long does each stop have")
 stop_data = req.json()
 
 #list_between_eight_and_twenty = []
+
+logging.info("fetch number of tgv between 18H 20H00")
+'''
+combien de tgv partent entre 18H00 et 200H00
+
+'''
+
+my_tgv1 = raw_data["journeys"][0]["sections"][1]["stop_date_times"][3]["base_departure_date_time"]
+my_tgv2 = raw_data["journeys"][0]["sections"][1]["stop_date_times"][2]["base_departure_date_time"]
+print(my_tgv1, my_tgv2)
 
 logging.info("script_ended")
