@@ -56,7 +56,7 @@ class JourneyInfo:
         """
         regex = re.compile(r'^[\.\-() a-zA-Zéèê0-9\']{2,}$')
         try:
-            with open(self._storage, 'r') as codes:
+            with open("data/stations_codes.json", 'r') as codes:
                 self._stationsCodes = json.load(codes)
         except (FileNotFoundError, PermissionError) as err:
             logging.info(f'{err}: Unable to retrieve stations codes locally. Sending requests to API')
@@ -76,7 +76,7 @@ class JourneyInfo:
         except FileExistsError:
             pass
         finally:
-            with open(self._storage, "w") as codes:
+            with open("data/stations_codes.json", "w") as codes:
                 json.dump(self._stationsCodes, codes, indent=4)
 
     @logger
@@ -97,10 +97,10 @@ class JourneyInfo:
         return (station, self._stationsCodes[station])
 
     def _getDepartureTime(self):
-        timeRegex = re.compile(r'^((2[0-3]|[0-1][0-9]):[0-5][0-9])|$')
-        departureTime = input("Please type time of departure (hh:mm):").strip()
+        timeRegex = re.compile(r'^((2[0-3]|[0-1][0-9])[0-5][0-9])|$')
+        departureTime = input("Please type time of departure (hhmm):").strip()
         if not re.match(timeRegex, departureTime):
-            logging.error("Incorrect date format")
+            logging.error("Incorrect date format. Exiting script")
             sys.exit(1)
         return departureTime
 
@@ -111,10 +111,10 @@ class JourneyInfo:
             self._arrival = self._getStationByInput("arrival")
             self._departureTime = self._getDepartureTime()
         except KeyError as err:
-            logging.error(f'Missing key {err}')
+            logging.error(f'Station {err} unknown. Exiting script')
             sys.exit(1)
         except EOFError:
-            logging.error("Ctrl + D pressed ")
+            logging.error("Ctrl + D pressed")
             sys.exit(2)
 
     @logger
@@ -156,7 +156,12 @@ class JourneyInfo:
             Array of stops : Station name
                              Time of arrival at stop
         '''
-        journey = self._getURLData(f'{JOURNEY_URL}?from={self._departure[CODE]}&to={self._arrival[CODE]}')
+        if self._departureTime == '':
+            journey = self._getURLData(f'{JOURNEY_URL}?from={self._departure[CODE]}&to={self._arrival[CODE]}')
+        else:
+            today = datetime.date.today().strftime("%Y%m%d")
+            time = f'{today}T{self._departureTime}00' 
+            journey = self._getURLData(f'{JOURNEY_URL}?from={self._departure[CODE]}&to={self._arrival[CODE]}&datetime={time}')
         if 'error' in journey:
             print(journey['error']['message'])
             sys.exit(1)
@@ -167,7 +172,7 @@ class JourneyInfo:
                 json.dump(self._journeyInfo, f, indent=4)
             logging.info(f"Journey info stored in {self._storage}")
         except KeyError as err:
-            logging.error(f'Missing key {err}')
+            logging.error(f'Missing key {err}. Exiting script')
         except TypeError as err:
             logging.error(f"{err}: Unexpected format")
             sys.exit(1)
