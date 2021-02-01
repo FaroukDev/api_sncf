@@ -30,10 +30,6 @@ STOPS = [
             }
         ]
 
-def test_getURLData():
-    journeyInfo = JourneyInfo()
-    journeyInfo._getURLData("", auth="")
-
 def test_updateStationsCodes():
     journey = JourneyInfo()
     regex = re.compile(r'^[\.\-() a-zA-Zéèê0-9\']{2,}$')
@@ -95,6 +91,7 @@ def test_updateStationsCodes():
     journey._stationsCodes = {}
     journey._updateStationsCodes(areas, regex)
     assert journey._stationsCodes == {}
+
 
 def test_getStationByInput(monkeypatch):
     journey = JourneyInfo()

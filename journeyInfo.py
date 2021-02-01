@@ -163,9 +163,9 @@ class JourneyInfo:
         try:
             journeys = journey['journeys']
             self._parseJourneys(journeys)
-            with open("data/journey.json", "w", encoding='utf8') as f:
+            with open(self._storage, "w", encoding='utf8') as f:
                 json.dump(self._journeyInfo, f, indent=4)
-            logging.info("Journey info stored in data/journeys.json")
+            logging.info(f"Journey info stored in {self._storage}")
         except KeyError as err:
             logging.error(f'Missing key {err}')
         except TypeError as err:
