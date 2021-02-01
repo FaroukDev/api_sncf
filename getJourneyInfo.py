@@ -46,7 +46,7 @@ def main():
     except (FileNotFoundError, PermissionError) as err:
         logging.error(err)
         sys.exit(1)
-    journey = JourneyInfo(apiAuthKey, "data/stations_codes.json")
+    journey = JourneyInfo(apiAuthKey, "data/journey.json")
     journey.run()
     logging.info(f"Script ended")
 
